@@ -9,6 +9,7 @@ import CreateApiData from './component/createApiData';
 import MemoList from './component/memo';
 import CallbackUse from './component/callbackuse';
 import FilterData from './component/filterdata';
+import ImageSearch from './component/ImageSearch';
 
 function App() {
   const[userList,setUserList]=useState([])
@@ -22,6 +23,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Count/>
+        <ImageSearch/>
         <Create callbackChange={callbackChange}/>
         <List userList={userList}/>
         <ApiCall/>
