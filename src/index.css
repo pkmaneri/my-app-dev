@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Two columns for pairs */
+  gap: 16px; /* Space between cards */
+  padding: 20px; /* Add some padding */
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.card-body {
+  padding: 8px;
+  text-align: center;
+}
